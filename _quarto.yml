@@ -6,15 +6,13 @@ format:
     theme: 
       - litera
       - layout/css/econpol.scss
-    toc: true
 
 bibliography: files/lit/wipol_spec.bib
 
 website:
-  title: "econpol"
+  title: "PI 2159 Special Topics in Economic Policy"
   site-url: "https://mschnetzer.github.io/econpol/"
   description-meta: "The economics of inequality"
-  
   
   navbar:
     pinned: true
@@ -24,12 +22,12 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
       - href: syllabus.qmd
         text: Syllabus
       - href: assignments.qmd
         text: Assignments
+      - href: postersession.qmd
+        text: Poster Session
         
   page-footer:
     left: |

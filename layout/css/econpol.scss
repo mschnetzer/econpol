@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Ubuntu:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
 /*-- scss:defaults --*/
 $white:    #fff !default;
@@ -34,11 +34,10 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
-$font-family-sans-serif:      Ubuntu, sans-serif !default;
+$font-family-sans-serif:      Barlow, sans-serif !default;
 $font-family-serif:           Barlow, serif !default;
 
 $font-size-base:              1.25rem !default;
-$headings-font-weight:        700 !default;
 
 $h1-font-size: $font-size-base * 2.45;
 $h2-font-size: $font-size-base * 1.85;
@@ -54,28 +53,56 @@ $sidebar-font-size-section: 0.9rem;
 $link-color: $blue;
 $link-hover-color: $red;
 
-
 $monokai-bg: #2e3440;
 
+html {
+  margin:    0 auto;
+  max-width: 80%;
+}
 
+ul {
+  font-weight: 100;
+}
+
+p {
+  font-weight: 100;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-weight: 100;
+}
 
 .title-block {
   margin: 1em 0;
-  border-bottom: 3px solid $gray-200;
   padding-bottom: 1em;
 }
 
 .course-title {
-  font-weight: 100;
-  margin-top: 0;
+  font-size: 1.2rem;
+  color: $gray-600;
 }
 
 .course-subtitle {
   font-weight: 700;
+  color: $red;
 }
 
 .course-icon {
+  font-size: 40pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
 
+@media(min-width:992px) {
+  .course-icon {
+    font-size: 80pt;
+  }
 }
 
 .course-meta {
@@ -84,8 +111,7 @@ $monokai-bg: #2e3440;
 }
 
 .course-details {
-  margin: 0 0 1em;
-  border-bottom: 3px solid $gray-200;
+  border-bottom: 1px solid $gray-200;
   padding-bottom: 1em;
 }
 
@@ -99,12 +125,10 @@ $monokai-bg: #2e3440;
   padding-left: 1.4rem;
 }
 
-
-// Footer stuff
-.nav-footer-left {
-  text-align: left;
+.course-details-smaller li {
+  font-size: 1rem;
 }
 
-.nav-footer-right {
-  text-align: right;
+.course-details-smaller h3 {
+  font-size: 1.4rem;
 }

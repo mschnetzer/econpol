@@ -1,0 +1,52 @@
+---
+title: "Syllabus"
+page-layout: full
+editor: visual
+format: 
+  html: 
+    css: layout/css/econpol.scss
+---
+
+::: {.grid .course-details .course-details-smaller}
+
+::: {.g-col-6}
+#### Lecturer
+
+- {{< fa user >}} &nbsp; {{< var instructor.name >}}
+- {{< fa globe >}} &nbsp; [{{< var instructor.url >}}]({{< var instructor.url >}})
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+- {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
+:::
+
+::: {.g-col-6}
+#### Course details
+
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+:::
+
+:::
+
+
+#### Course design
+
+The lecturer introduces the topics and provides an overview of the relevant literature. Specifically, the course offers a summary of applied research on distribution of income and wealth, some theoretical approaches and various policy-related papers. Students are expected to read three papers and write short summaries at home in order to prepare for specific units. Additionally, students will present a selected paper provided by the lecturer in a poster session. These presentations should provide an overview of the specific papers and incite discussions in a small-group setting. Finally, students will sum up their findings in a short essay focusing on policy implications of the research.
+
+The course offers a lot of room for discussion in order to permit students to assess various arguments and perspectives, form their own opinion and argue it in a group setting. The teaching is designed to encourage students to actively participate in the debates, raise questions, hone their arguments, and gain experience in presenting in a poster session.
+
+#### Learning outcomes
+
+After completing this course, students will:
+
+- know the recent empirical research on the evolution of inequality in income and wealth
+- be aware of the complexity of the nexus between inequality, growth, and policy-related questions
+- have amplified their stock of arguments for economic debates about inequality, power, and growth
+- be capable of presenting their work in a poster session
+
+#### Grading
+
+- Homework: 30\% (0-10 points for each homework)
+- Poster presentation: 40\% (0-20 points for the quality of the presentation, 0-20 for the poster style and structure)
+- Essay: 30\% (0-30 points for the essay)

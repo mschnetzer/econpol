@@ -14,7 +14,7 @@ course:
   days: "Fridays"
   time: "10:00–12:00"
   location: "TC.3.10"
-  dates: "October 14, 2022 – January 20, 2023"
+  dates: "Oct 14, 2022 – Jan 20, 2023"
   url: "https://mschnetzer.github.io/econpol"
   copyright_year: "2022"
 
@@ -22,3 +22,4 @@ university:
   name: Vienna University of Economics and Business
   department: Department of Economics
   url: "https://www.wu.ac.at"
+  

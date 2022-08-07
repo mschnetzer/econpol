@@ -3,12 +3,13 @@ title: "Special Topics in Economics Policy"
 subtitle: "The economics of inequality"
 details: |
     {{< var course.number >}} • {{< var course.semester >}} <br> {{< var university.name >}}
-course-icon: "{{< fa balance-scale size=5x >}}"
-page-layout: full
+course-icon: "fa-scale-unbalanced"
+page-layout: custom
 format:
   html:
     template-partials:
       - layout/partials/title-block.html
+    css: layout/css/econpol.scss
 ---
 
 ::: {.home}
@@ -16,7 +17,7 @@ format:
 ::: {.grid .course-details}
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-### Lecturer
+#### Lecturer
 
 - {{< fa user >}} &nbsp; {{< var instructor.name >}}
 - {{< fa globe >}} &nbsp; [{{< var instructor.url >}}]({{< var instructor.url >}})
@@ -25,10 +26,10 @@ format:
 :::
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-### Course details
+#### Course details
 
-- {{< fa calendar >}} &nbsp; {{< var course.days >}}
 - {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
 - {{< fa clock >}} &nbsp; {{< var course.time >}}
 - {{< fa location-dot >}} &nbsp; {{< var course.location >}}
 :::
@@ -36,14 +37,14 @@ format:
 :::
 
 
-## Summary
+#### Summary
 
 This course covers the triangulation of the distribution of income and wealth, economic growth and wellbeing, and policy making. The starting point is a broad survey of the recent empirical research on the distribution of income and wealth. Hereafter, we will address the nexus between inequality and economic growth from a theoretical and empirical perspective. Finally, students will discuss the linkage between inequality, political power, and policy aspects. All topics are approached with references to recent publications in scientific journals and a policy-relevant focus.
 
 To sum up, students will gain:
 
 - an overview of the recent empirical research on inequality of income and wealth
-- a basic understanding of the theoretical and empirical relationship between inequality and economic growth
-- a multi-paradigmatic perspective on power in economic theory
+- a basic understanding of the theoretical and empirical relationship between inequality and aggregate demand
+- a multi-paradigmatic perspective on power relations and policy debates in economics
 
 :::
