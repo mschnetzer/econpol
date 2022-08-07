@@ -16,20 +16,23 @@ format:
 ::: {.grid .course-details}
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-
 ### Lecturer
 
 - {{< fa user >}} &nbsp; {{< var instructor.name >}}
 - {{< fa globe >}} &nbsp; [{{< var instructor.url >}}]({{< var instructor.url >}})
 - {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
 - {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
+:::
 
-
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
 ### Course details
 
-
-
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
 :::
+
 :::
 
 
