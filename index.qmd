@@ -3,7 +3,7 @@ title: "Special Topics in Economics Policy"
 subtitle: "The economics of inequality"
 details: |
     {{< var course.number >}} • {{< var course.semester >}} <br> {{< var university.name >}}
-course-icon: "{{< fa balance-scale >}}"
+course-icon: "{{< fa balance-scale size=5x >}}"
 page-layout: full
 format:
   html:
@@ -16,9 +16,11 @@ format:
 ::: {.grid .course-details}
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+
 ### Lecturer
 
-- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+- {{< fa user >}} &nbsp; {{< var instructor.name >}}
+- {{< fa globe >}} &nbsp; [{{< var instructor.url >}}]({{< var instructor.url >}})
 - {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
 - {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
 
@@ -31,27 +33,14 @@ format:
 :::
 
 
-## Quarto
+## Summary
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This course covers the triangulation of the distribution of income and wealth, economic growth and wellbeing, and policy making. The starting point is a broad survey of the recent empirical research on the distribution of income and wealth. Hereafter, we will address the nexus between inequality and economic growth from a theoretical and empirical perspective. Finally, students will discuss the linkage between inequality, political power, and policy aspects. All topics are approached with references to recent publications in scientific journals and a policy-relevant focus.
 
-## Running Code
+To sum up, students will gain:
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
-
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
-
-{{< fa thumbs-up >}} Thats right!
+- an overview of the recent empirical research on inequality of income and wealth
+- a basic understanding of the theoretical and empirical relationship between inequality and economic growth
+- a multi-paradigmatic perspective on power in economic theory
 
 :::

@@ -14,7 +14,7 @@ $gray-900: #212529 !default;
 $black:    #000 !default;
 
 // Hiroshige colors from MetBrewer R package
-$blue:   #1e466e !default;
+$blue:   #5d8198 !default;
 $indigo: #376795 !default;
 $purple: #480B6A !default;
 $pink:   #A52C60 !default;
@@ -51,8 +51,8 @@ $toc-font-size: 1.1rem;
 $sidebar-font-size: 1.1rem;
 $sidebar-font-size-section: 0.9rem;
 
-$link-color: $red;
-$link-hover-color: $yellow;
+$link-color: $blue;
+$link-hover-color: $red;
 
 
 $monokai-bg: #2e3440;
@@ -75,7 +75,7 @@ $monokai-bg: #2e3440;
 }
 
 .course-icon {
-  font-size: 70pt;
+
 }
 
 .course-meta {
