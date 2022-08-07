@@ -1,0 +1,38 @@
+project:
+  type: website
+  
+format:
+  html:
+    theme: 
+      - litera
+      - layout/css/econpol.scss
+    toc: true
+
+bibliography: files/lit/wipol_spec.bib
+
+website:
+  title: "PI 2159 Special Topics in Economic Policy"
+  site-url: "https://mschnetzer.github.io/econpol/"
+  description-meta: "The economics of inequality"
+  
+  
+  navbar:
+    pinned: true
+    background: light
+    foreground: "#5d8198"
+    collapse: true
+    right:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: assignments.qmd
+        text: Assignments
+        
+  page-footer:
+    left: |
+      {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}} {{< var course.copyright_year >}} by [{{< var author >}}]({{< var instructor.url >}})
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)

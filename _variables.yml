@@ -1,0 +1,24 @@
+author: Matthias Schnetzer
+
+instructor:
+  name: Dr. Matthias Schnetzer
+  email: mschnetz@wu.ac.at
+  url: "https://mschnetzer.github.io"
+  twitter: matschnetzer
+  github: mschnetzer
+  contact_policy: Please contact me via e-mail and I will usually respond within a few days.
+
+course:
+  number: "PI 2159"
+  semester: "Winter term 2022"
+  days: "Fridays"
+  time: "10:00–12:00"
+  location: "TC.3.10"
+  dates: "October 14, 2022 – January 20, 2023"
+  url: "https://mschnetzer.github.io/econpol"
+  copyright_year: "2022"
+
+university:
+  name: Vienna University of Economics and Business
+  department: Department of Economics
+  url: "https://www.wu.ac.at"
