@@ -11,7 +11,7 @@ format:
 bibliography: files/lit/wipol_spec.bib
 
 website:
-  title: "PI 2159 Special Topics in Economic Policy"
+  title: "econpol"
   site-url: "https://mschnetzer.github.io/econpol/"
   description-meta: "The economics of inequality"
   
