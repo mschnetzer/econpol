@@ -25,7 +25,7 @@ schedule %>% arrange(Date) %>% select(-c(Paper,PDF)) %>%
         glue('<a href="#h{Assignment}"><i class="fa-solid fa-pen fa-lg"></i></a>'),
         glue('<font color="#e9ecef"><i class="fa-solid fa-pen fa-lg"></i></font>')),
         Date = format(Date, '%b %d, %Y')) %>%
-  kbl(escape = FALSE, align = "rclcc", table.attr = 'class="schedule-table"') %>% 
+  kbl(escape = FALSE, align = "cclcc", table.attr = 'class="schedule-table"') %>% 
   kable_styling() %>% 
   column_spec(1:2, width = "15%") %>% 
   column_spec(3, width = "40%") %>% 

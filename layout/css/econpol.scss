@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
 
+
 /*-- scss:defaults --*/
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
@@ -64,6 +65,7 @@ $monokai-bg: #2e3440;
 html {
   margin: 0 auto;
   max-width: 90%;
+  overflow-x: hidden;
 }
 
 ul {
@@ -93,6 +95,7 @@ h4, h5, h6 {
 .navbar-title {
   font-size: 0.7rem;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 .nav-footer {
@@ -318,19 +321,33 @@ h4, h5, h6 {
 
 /*-- SCHEDULE --*/
 
-.schedule-table td, tr, th, tbody {
-  font-weight: 100;
+.schedule-table th {
+  font-weight: 400;
   font-size: 0.6rem;
 }
 
+.schedule-table td, tr, tbody {
+  font-weight: 100;
+  font-size: 0.6rem;
+  border-bottom: 0.5px solid $gray-400;
+}
+
 @media(min-width:768px) {
-  .schedule-table td, tr, th, tbody {
+  .schedule-table th {
+    font-size: 1rem;
+  }
+  
+  .schedule-table td, tr, tbody {
     font-size: 1rem;
   }
 }
 
 @media(min-width:992px) {
-  .schedule-table td, tr, th, tbody {
+  .schedule-table th {
+    font-size: 1.2rem;
+  }
+  
+  .schedule-table td, tr, tbody {
     font-size: 1.2rem;
   }
 }
@@ -338,19 +355,32 @@ h4, h5, h6 {
 
 /*-- POSTER --*/
 
-.poster-table td, tr, th, tbody {
-  font-weight: 100;
+.poster-table th {
+  font-weight: 400;
   font-size: 0.6rem;
 }
 
+.poster-table td, tr, tbody {
+  font-size: 0.6rem;
+  border-bottom: 0.5px solid $gray-400;
+}
+
 @media(min-width:768px) {
-  .poster-table td, tr, th, tbody {
+  .poster-table th {
+    font-size: 1rem;
+  }
+  
+  .poster-table td, tr, tbody {
     font-size: 1rem;
   }
 }
 
 @media(min-width:992px) {
-  .poster-table td, tr, th, tbody {
+  .poster-table th {
+    font-size: 1.2rem;
+  }
+  
+  .poster-table td, tr, tbody {
     font-size: 1.2rem;
   }
 }
