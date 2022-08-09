@@ -1,15 +1,12 @@
 ---
 title: "Syllabus"
 page-layout: full
-editor: visual
-format: 
-  html: 
-    css: layout/css/econpol.scss
+css: layout/css/econpol.scss
 ---
 
-::: {.grid .course-details .course-details-smaller}
+::: {.grid .course-info .course-info-syllabus}
 
-::: {.g-col-6}
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
 #### Lecturer
 
 - {{< fa user >}} &nbsp; {{< var instructor.name >}}
@@ -18,8 +15,8 @@ format:
 - {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
 :::
 
-::: {.g-col-6}
-#### Course details
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+#### Dates
 
 - {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
 - {{< fa calendar >}} &nbsp; {{< var course.days >}}
@@ -27,14 +24,23 @@ format:
 - {{< fa location-dot >}} &nbsp; {{< var course.location >}}
 :::
 
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+#### Highlights
+
+- {{< fa users-line >}} &nbsp; {{< var course.students >}} students
+- {{< fa pen >}} &nbsp;&nbsp; Draft a research proposal
+- {{< fa person-chalkboard >}} &nbsp; Present at poster session
+- {{< fa comments >}} &nbsp; Engage in policy discussion
+:::
+
 :::
 
 
 #### Course design
 
-The lecturer introduces the topics and provides an overview of the relevant literature. Specifically, the course offers a summary of applied research on distribution of income and wealth, some theoretical approaches and various policy-related papers. Students are expected to read three papers and write short summaries at home in order to prepare for specific units. Additionally, students will present a selected paper provided by the lecturer in a poster session. These presentations should provide an overview of the specific papers and incite discussions in a small-group setting. Finally, students will sum up their findings in a short essay focusing on policy implications of the research.
+The lecturer introduces the topics and provides an overview of the relevant literature. Specifically, the course offers a summary of applied research on distribution of income and wealth, some theoretical approaches and various policy-related papers. Students are expected to read three papers and write short summaries at home in order to prepare for specific units. Additionally, students will draft a rudimentary research proposal for an empirical study based on the provided starting literature. These proposals will be presented in a poster session. The short presentations should focus on the highlights of an elaborate research agenda and incite discussions in a small-group setting.
 
-The course offers a lot of room for discussion in order to permit students to assess various arguments and perspectives, form their own opinion and argue it in a group setting. The teaching is designed to encourage students to actively participate in the debates, raise questions, hone their arguments, and gain experience in presenting in a poster session.
+The course offers a lot of room for discussion in order to permit students to assess various arguments and perspectives, form their own opinion, and argue it in a group setting. The teaching is designed to encourage students to actively participate in the debates, raise questions, hone their arguments, and gain experience in drafting research proposals and presenting in a poster session.
 
 #### Learning outcomes
 
@@ -44,9 +50,17 @@ After completing this course, students will:
 - be aware of the complexity of the nexus between inequality, growth, and policy-related questions
 - have amplified their stock of arguments for economic debates about inequality, power, and growth
 - be capable of presenting their work in a poster session
+- be able to formulate a well-founded research question (e.g. for their bachelor thesis)
+
 
 #### Grading
 
-- Homework: 30\% (0-10 points for each homework)
-- Poster presentation: 40\% (0-20 points for the quality of the presentation, 0-20 for the poster style and structure)
-- Essay: 30\% (0-30 points for the essay)
+::: { .grading }
+ | 
+-|---------------------------------------------
+ {{< fa home >}} | Assignments: 30\% (0-10 points for each homework) 
+ {{< fa person-chalkboard >}}  | Poster presentation: 30\% (0-20 points for the quality of the presentation, 0-10 for the poster style and structure) 
+ {{< fa file-pen >}}  | Essay: 40\% (0-30 points for the essay) 
+:::
+
+**All single tasks have to be passed** (50\% threshold each).

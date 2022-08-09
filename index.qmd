@@ -1,20 +1,20 @@
 ---
-title: "Special Topics in Economics Policy"
-subtitle: "The economics of inequality"
+title: "{{< var course.title >}}"
+subtitle: "{{< var course.subtitle >}}"
 details: |
     {{< var course.number >}} • {{< var course.semester >}} <br> {{< var university.name >}}
 course-icon: "fa-scale-unbalanced"
-page-layout: custom
+course-icon-bg: "fa-comment"
+page-layout: full
 format:
   html:
-    template-partials:
-      - layout/partials/title-block.html
+    template-partials: layout/partials/title-block.html
     css: layout/css/econpol.scss
 ---
 
 ::: {.home}
 
-::: {.grid .course-details}
+::: {.grid .course-info}
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
 #### Lecturer
@@ -34,6 +34,12 @@ format:
 - {{< fa location-dot >}} &nbsp; {{< var course.location >}}
 :::
 
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+#### Contact
+
+{{< var instructor.contact_policy >}}
+:::
+
 :::
 
 
@@ -43,8 +49,10 @@ This course covers the triangulation of the distribution of income and wealth, e
 
 To sum up, students will gain:
 
+::: {.summary-points}
 - an overview of the recent empirical research on inequality of income and wealth
 - a basic understanding of the theoretical and empirical relationship between inequality and aggregate demand
 - a multi-paradigmatic perspective on power relations and policy debates in economics
+:::
 
 :::

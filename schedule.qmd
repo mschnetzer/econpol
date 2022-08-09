@@ -1,0 +1,67 @@
+---
+title: "Schedule"
+page-layout: full
+css: layout/css/econpol.scss
+---
+
+```{r packages, include=FALSE}
+library(tidyverse)
+library(readxl)
+library(glue)
+library(knitr)
+library(kableExtra)
+
+Sys.setlocale(locale="en_US.UTF-8")
+schedule <- read_xlsx(here::here("data/schedule/schedule.xlsx"))
+```
+
+In this table you find the dates and contents of all units of the course.
+
+
+::: {.schedule-table}
+```{r table, echo=F, results='asis'}
+schedule %>% arrange(Date) %>% select(-c(Paper,PDF)) %>%
+  mutate(Assignment = ifelse(!is.na(Assignment),
+        glue('<a href="#h{Assignment}"><i class="fa-solid fa-pen fa-lg"></i></a>'),
+        glue('<font color="#e9ecef"><i class="fa-solid fa-pen fa-lg"></i></font>')),
+        Date = format(Date, '%b %d, %Y')) %>%
+  kbl(escape = FALSE, align = "rclcc", table.attr = 'class="schedule-table"') %>% 
+  kable_styling() %>% 
+  column_spec(1:2, width = "15%") %>% 
+  column_spec(3, width = "40%") %>% 
+  column_spec(4:5, width = "15%")
+```
+:::
+
+#### Assignments
+
+While assignments [[1]](#homework-1) and [[3]](#homework-3) are mandatory, students may choose between [[2]](#homework-2) and [[4]](#homework-4). Please write a concise and consistent summary of the provided paper with a **limit of 400 words** and upload it on the [learning platform](https://learn.wu.ac.at). The submission deadline is **9 a.m. on the day of the respective teaching unit**. You can structure your text around the following questions:
+
+- What is the research question?
+- Why is this question interesting?
+- How does the author approach and answer this question? 
+- What are the main findings? 
+- Is the paper credible? Why? Why not?
+
+##### Homework 1{#h1}
+
+```{r assign1, include = F}
+assignvars <- schedule %>% filter(!is.na(Assignment)) %>%
+  mutate(deadline = format(Date, '%B %d, %Y'),
+         citation = paste0("@", Paper),
+         pdf = paste0("data/lit/", PDF, ".pdf"))
+```
+
+This assignment is mandatory. Please submit your summary before `r assignvars$deadline[[1]]` at 9 a.m. The journal article for this assignment is `r assignvars$citation[[1]]` &nbsp; <a href = "`r assignvars$pdf[[1]]`">{{< fa file-pdf >}}</a>
+
+##### Homework 2{#h2}
+
+This assignment is optional. If you choose to not read this paper, assignment [[4]](#homework-4) is mandatory. Please submit your summary before `r assignvars$deadline[[2]]` at 9 a.m. The journal article for this assignment is `r assignvars$citation[[2]]` &nbsp; <a href = "`r assignvars$pdf[[2]]`">{{< fa file-pdf >}}</a>
+
+##### Homework 3{#h3}
+
+This assignment is mandatory. Please submit your summary before `r assignvars$deadline[[3]]` at 9 a.m. The journal article for this assignment is `r assignvars$citation[[3]]` &nbsp; <a href = "`r assignvars$pdf[[3]]`">{{< fa file-pdf >}}</a>
+
+##### Homework 4{#h4}
+
+This assignment is optional. If you choose to not read this paper, assignment [[2]](#homework-2) is mandatory. Please submit your summary before `r assignvars$deadline[[4]]` at 9 a.m. The journal article for this assignment is `r assignvars$citation[[4]]` &nbsp; <a href = "`r assignvars$pdf[[4]]`">{{< fa file-pdf >}}</a>

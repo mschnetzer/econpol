@@ -7,7 +7,7 @@ format:
       - litera
       - layout/css/econpol.scss
 
-bibliography: files/lit/wipol_spec.bib
+bibliography: data/lit/wipol_spec.bib
 
 website:
   title: "PI 2159 Special Topics in Economic Policy"
@@ -21,16 +21,16 @@ website:
     collapse: true
     right:
       - href: index.qmd
-        text: Home
+        text: About
       - href: syllabus.qmd
         text: Syllabus
-      - href: assignments.qmd
-        text: Assignments
-      - href: postersession.qmd
-        text: Poster Session
+      - href: schedule.qmd
+        text: Schedule
+      - href: essayposter.qmd
+        text: Essay & Poster
         
   page-footer:
-    left: |
-      {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}} {{< var course.copyright_year >}} by [{{< var author >}}]({{< var instructor.url >}})
     right: |
-      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)
+      {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}} {{< var course.copyright_year >}} by [{{< var author >}}]({{< var instructor.url >}})
+    left: |
+      Made with {{< fa heart >}} and {{< fa brands r-project >}} [Quarto](https://quarto.org/)
