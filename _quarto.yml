@@ -31,6 +31,6 @@ website:
         
   page-footer:
     right: |
-      {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}} {{< var course.copyright_year >}} by [{{< var author >}}]({{< var instructor.url >}})
+      {{< fa brands creative-commons >}} {{< var course.copyright_year >}} by {{< var author >}}
     left: |
       Made with {{< fa heart >}} and {{< fa brands r-project >}} [Quarto](https://quarto.org/)

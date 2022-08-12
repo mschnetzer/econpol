@@ -9,15 +9,15 @@ css: layout/css/econpol.scss
 You have to draft a rudimentary research proposal for a hypothetical (but feasible) bachelor thesis [on a selected topic](#topics). This research project should be an empirical project, i.e. you should work with data. Writing a proposal includes the formulation of a relevant and interesting research question, a literature review that allows you to identify the research gap you will contribute to (and hence an explanation of your contribution to the relevant literature), the search for and explanation of an available data set that includes the information you need, and a brief outline of the methodology. 
 
 Importantly, at this stage it is not required that the data is readily available but it should at least exist in some form. It is also possible to present a strategy for own data collection, for instance if you would conduct a survey or an experiment in order to answer your research
-question. The research proposal has to include a cover page (title, author, date, keywords, JEL codes) and an abstract of max. 200 words. The word limit is 2,500 words (excluding title page, references and abstract). You may write less but writing fewer words is not easier. You have to structure the research proposal as follows:
+question. The research proposal has to include a cover page (title, author, date, keywords, [JEL codes](https://www.aeaweb.org/econlit/jelCodes.php?view=jel)) and an abstract of max. 200 words. The word limit is 2,500 words (excluding title page, references and abstract). You may write less but writing fewer words is not easier. You should structure the research proposal as follows:
 
-- Introduction: Explain why the topic is important and interesting; sketch the general idea of the proposal
-- Literature review: The purpose of a literature review is to identify a research gap and to relate what you (want to) add to the existing literature. It is not a summary of everything that has been said on the topic or a description of the results of all empirical papers on similar questions. A key challenge is to connect theories with empirical findings. The literature review should convince the reader that i) there is a research gap and that ii) filling this gap is important. There are different types of research gaps. For instance, it might be a lack of knowledge or conflicting results. Also, acknowledge that progress in research is incremental and try to come up with a feasible proposal rather than a new formula to solve one of today's major economic challenges.
-- Research question and hypotheses: Explain the research question in detail and explain what you expect to find.
-- Methodology: Explain how you would try to answer the question from a methodological point of view.
-- Data: What data did you find that you could use in the analysis?
-- Main challenges that you expect
-- Bibliography: you can use any citation style, for instance APA or Harvard; however,
+- *Introduction:* Explain why the topic is important and interesting; sketch the general idea of the proposal
+- *Literature review:* The purpose of a literature review is to identify a research gap and to relate what you (want to) add to the existing literature. It is not a summary of everything that has been said on the topic or a description of the results of all empirical papers on similar questions. A key challenge is to connect theories with empirical findings. The literature review should convince the reader that i) there is a research gap and that ii) filling this gap is important. There are different types of research gaps. For instance, it might be a lack of knowledge or conflicting results. Also, acknowledge that progress in research is incremental and try to come up with a feasible proposal rather than a new formula to solve one of today's major economic challenges.
+- *Research question and hypotheses:* Explain the research question in detail and explain what you expect to find.
+- *Methodology:* Explain how you would try to answer the question from a methodological point of view.
+- *Data:* What data did you find that you could use in the analysis?
+- *Conclusion*: Main challenges that you expect
+- *Bibliography:* you can use any citation style, for instance APA or Harvard; however,
 you have to be consistent!
 
 **The final version of the essay is due on January 31, 2023.**
@@ -35,7 +35,7 @@ You will present your research idea to your colleagues in a poster session. Sess
 
 #### Topics
 
-Please choose on of the following topics and read the provided starting literature. It should give you enough inspiration to elaborate an own research question and look for data.
+Please choose on of the following topics and read the provided starting literature. It should give you enough inspiration to elaborate an own research question on a policy-relevant topic and to look out for suitable data.
 
 ```{r readbib, include=FALSE, cache = FALSE}
 library(tidyverse)
@@ -80,7 +80,7 @@ printtab <- bibtable %>% group_by(keywords, topic) %>%
 printtab %>% arrange(rank) %>% select(rank, topic, papers, session) %>%
   kable(align = "cllc", format = "markdown", table.attr = 'class="poster-table"',
       col.names = c("#","Topic","Starting literature","Session")) %>% 
-  kable_styling() %>% 
+  kable_styling() %>%
   column_spec(1, width = "5%") %>% 
   column_spec(2, width = "35%") %>% 
   column_spec(3, width = "50%") %>% 
