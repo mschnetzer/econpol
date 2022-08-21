@@ -40,7 +40,7 @@ css: layout/css/econpol.scss
 
 The lecturer introduces the topics and provides an overview of the relevant literature. Specifically, the course offers a summary of applied research on distribution of income and wealth, some theoretical approaches and various policy-related papers. Students are expected to read three papers and write short summaries at home in order to prepare for specific units. Additionally, students will draft a rudimentary research proposal for an empirical study based on the provided starting literature. These proposals will be presented in a poster session. The short presentations should focus on the highlights of an elaborate research agenda and incite discussions in a small-group setting.
 
-The course offers a lot of room for discussion in order to permit students to assess various arguments and perspectives, form their own opinion, and argue it in a group setting. The teaching is designed to encourage students to actively participate in the debates, raise questions, hone their arguments, and gain experience in drafting research proposals and presenting in a poster session.
+The course offers a lot of room for discussion in order to permit students to assess various arguments and perspectives, form their own opinion, and argue in a group setting. The teaching is designed to encourage students to actively participate in the debates, raise questions, hone their arguments, and gain experience in drafting research proposals and presenting in a poster session.
 
 #### Learning outcomes
 

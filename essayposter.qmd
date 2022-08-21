@@ -53,7 +53,7 @@ bibtable <- bibfile %>%
     keywords == "gpg" ~ "Gender pay gaps",
     keywords == "wealthgap" ~ "Gender and migrant wealth gaps",
     keywords == "wageled" ~ "Functional distribution and growth",
-    keywords == "fiscal" ~ "Fiscal policy and inequality",
+    keywords == "fiscal" ~ "Restrictive fiscal policy and inequality",
     keywords == "intgen" ~ "Intergenerational mobility",
     keywords == "dina" ~ "Distributional National Accounts (DINA)",
     keywords == "wealth" ~ "The distribution of wealth",
@@ -65,7 +65,7 @@ bibtable <- bibfile %>%
     keywords == "elites" ~ "Inequality and political elites",
     keywords == "power" ~ "Power in economics"),
     bibtexkey = paste0("@",bibtexkey))  %>% 
-  mutate(keywords = factor(keywords, levels = c("history", "global", "dina", "gpg", "wealth", "wealthgap", "pareto", "inherit", "intgen", "wageled", "fiscal", "climate", "taxation", "elites", "redist", "power"))) %>%   
+  mutate(keywords = factor(keywords, levels = c("history", "global", "dina", "gpg", "wealth", "wealthgap", "pareto", "inherit", "intgen", "wageled", "fiscal", "taxation", "climate", "elites", "redist", "power"))) %>%   
   filter(!is.na(topic)) %>%
   arrange(keywords)
 

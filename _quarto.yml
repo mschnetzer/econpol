@@ -8,6 +8,7 @@ format:
       - layout/css/econpol.scss
 
 bibliography: data/lit/wipol_spec.bib
+csl: data/lit/wirtschaftsuniversitat-wien-author-date.csl
 
 website:
   title: "PI 2159 Special Topics in Economic Policy"
