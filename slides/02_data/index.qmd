@@ -39,7 +39,7 @@ format:
 [Has inequality been rising lately?]{.bubble .bubble-bottom-left .absolute top="5%" left="18%" style="--bubcol: var(--bubcol-blue);"}
 
 ::: {.fragment .fade-in}
-[What inequality do you mean?]{.bubble .bubble-bottom-right .absolute top="20%" right="18%" style="--bubcol: var(--bubcol-red);"}
+[What inequality do you mean exactly?]{.bubble .bubble-bottom-right .absolute top="20%" right="18%" style="--bubcol: var(--bubcol-red);"}
 :::
 
 ![](img/discuss1.png){.absolute bottom="0" left="5%" width="300px"}
@@ -58,7 +58,7 @@ Illustrations by [https://openpeeps.com](https://openpeeps.com).
 ::: footer
 :::
 
-## Canberra Group {.smaller}
+## Income concepts according to Canberra Group {.smaller}
 
 ```{r packages}
 #| echo: false
@@ -157,7 +157,7 @@ kable_classic(full_width = F)
 [Administrative]{.hl .hl-dred} and [survey]{.hl .hl-blue} data sources: Wage tax data (WTD), Income tax data (ITD), Integrated wage and income tax data (IWITD), Social security data (SSD), Capital gains tax data (CGT), System of National Accounts (SNA), European Survey of Income and Living Conditions (EU-SILC), Household Finance and Consumption Survey (HFCS), Household Budgetary Survey (HBS), Structure of Earnings Survey (SES)
 :::
 
-## What's EU-SILC? {.smaller}
+## What is EU-SILC? {.smaller}
 
 - European Union Statistics on Income and Living Conditions (by Eurostat)
 - Harmonized sample survey in private households
