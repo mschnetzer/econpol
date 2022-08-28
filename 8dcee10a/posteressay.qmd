@@ -1,7 +1,0 @@
----
-title: "Poster & Essay"
-page-layout: full
-css: layout/css/econpol.scss
----
-
-Das ist ein Test

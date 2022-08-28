@@ -2,6 +2,8 @@ author: Matthias Schnetzer
 
 instructor:
   name: Dr. Matthias Schnetzer
+  name-wo-title: Matthias Schnetzer
+  employer: "Vienna Chamber of Labour & WU Vienna"
   email: mschnetz@wu.ac.at
   url: "https://mschnetzer.github.io"
   twitter: matschnetzer
@@ -13,6 +15,8 @@ instructor:
 course:
   title: Special Topics in Economic Policy
   subtitle: The economics of inequality
+  icon: fa-scale-unbalanced
+  icon-bg: fa-comment
   number: "PI 2159"
   semester: "Winter term 2022/23"
   days: "Fridays"

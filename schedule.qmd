@@ -4,7 +4,7 @@ page-layout: full
 css: layout/css/econpol.scss
 ---
 
-```{r packages, include=FALSE}
+```{r packages, include=FALSE, cache=FALSE}
 library(tidyverse)
 library(readxl)
 library(glue)
@@ -21,7 +21,11 @@ In this table you find the dates and contents of all classes.
 ::: {.schedule-table}
 ```{r table, echo=F, results='asis'}
 schedule %>% arrange(Date) %>% select(-c(Paper,PDF)) %>%
-  mutate(Assignment = ifelse(!is.na(Assignment),
+  mutate(Slides = ifelse(!is.na(Slides),
+        glue('<a href="slides/{Slides}/" target = "_blank">
+             <i class="fa-solid fa-display fa-lg"></i></a>'),
+        glue('<font color="#e9ecef"><i class="fa-solid fa-display fa-lg"></i></font>')), 
+        Assignment = ifelse(!is.na(Assignment),
         glue('<a href="#h{Assignment}"><i class="fa-solid fa-pen fa-lg"></i></a>'),
         glue('<font color="#e9ecef"><i class="fa-solid fa-pen fa-lg"></i></font>')),
         Date = format(Date, '%b %d, %Y')) %>%
@@ -29,7 +33,7 @@ schedule %>% arrange(Date) %>% select(-c(Paper,PDF)) %>%
   kable_styling() %>% 
   column_spec(1:2, width = "15%") %>% 
   column_spec(3, width = "40%") %>% 
-  column_spec(4:5, width = "15%")
+  column_spec(4:6, width = "10%")
 ```
 :::
 
