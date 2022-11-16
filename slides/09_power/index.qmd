@@ -1,0 +1,90 @@
+---
+metadata-files: 
+    - ../../_variables.yml
+title: |
+    <span class='fa-stack course-icon'>
+        <i class='fas {{< var course.icon-bg >}} fa-stack-2x blue'></i>
+        <i class='fas {{< var course.icon >}} fa-stack-1x fa-inverse' style='margin-top:-5pt'></i>
+      </span><br>
+    {{< var course.subtitle >}}
+author: "{{< var instructor.name >}}"  
+subtitle: Inequality, power and policy conclusions
+date: November 18, 2022
+from: markdown+emoji
+bibliography: ../../data/lit/wipol_spec.bib
+csl: ../../data/lit/wipol.csl
+execute:
+  echo: true
+format:
+  revealjs:
+    theme: ../econpol_slides.scss
+    footer: '{{< var course.number >}} {{< var course.title >}} | {{< var course.semester >}}'
+    logo: ../../data/img/wu-logo-simple.png
+    header-includes: |
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/>
+    slide-number: true
+    show-slide-number: all
+    transition: fade
+    progress: true
+    multiplex: false
+    scrollable: false
+    preview-links: true
+    hide-inactive-cursor: true
+    highlight-style: printing
+    pause: true
+---
+
+## Recap
+
+::: columns
+::: {.column width="25%"}
+{{< li gaqzgxto trigger=loop delay=1000 colors=secondary:#e76254 class=large >}}
+:::
+
+::: {.column width="75%"}
+- What is the definition of net wealth?
+- What data do we have to analyze the distribution of household wealth?
+- Which methods are commonly used to adjust for the non-response bias?
+- How large are the differences between wealth inequality and income inequality?
+:::
+:::
+
+# Economic policy and power
+
+::: {.absolute top="90%" left="30%" width="369" height="400"}
+![](../../data/img/avatar_finger.png)
+:::
+
+::: footer
+:::
+
+## Power in mainstream economics I {.medium}
+
+- Power is restricted to monopoly power and bargaining power as deviations in General Equilibrium Theory: Perfect markets are free of power imbalances
+- @bawerk:1914: "Macht oder ökonomisches Gesetz" in a controversy with the German Historical School of Economics (esp. Rudolf Stolzmann)
+- Perspective: methodological individualism vs. social classes [@rothschild:2002]; Power remains individualised, no institutions or power regimes
+- Epistemology: Economics perceives itself as natural sciences (e.g. @lazear:2000: "Economic imperialism")
+
+## Power in mainstream economics II {.medium}
+
+- @samuelson:1957: "Remember that in a perfectly competitive market, it really does not matter who hires whom; so have labor hire capital."
+- "Hiring simply means buying": Why should one contracting partner wield more power?
+- @alchian:1972: "The firm […] has no power of fiat, no authority, no disciplinary action any different […] from ordinary market contracting between any two people."
+- Is there a difference between the relations Shopkeeper-Employee and Shopkeeper-Customer?
+
+## Power between mainstream and heterodox economics {.medium}
+
+- Classical economists addressed the balance of powers
+  - Smith: Power balance between social classes
+  - Marx: HistoMat, exploitation
+  - (Petty, Quesnay, Ricardo, etc.)
+- George Akerlof: Asymmetrical information
+- Michal Kalecki: Degree if monopoly; Political aspects of full employment
+- Bowles/Gintis: The role of sanctions; short-side power
+- Political Economy: Relational, strategic, structural power
+
+
+## Bibliography {.bibstyle}
+
+:::footer
+:::

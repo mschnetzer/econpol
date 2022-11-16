@@ -60,7 +60,13 @@ After completing this course, students will:
 -|---------------------------------------------
  {{< fa home >}} | Assignments: 30\% (0-10 points for each homework) 
  {{< fa person-chalkboard >}}  | Poster presentation: 30\% (0-20 points for the quality of the presentation, 0-10 for the poster style and structure) 
- {{< fa file-pen >}}  | Essay/Research proposal: 40\% (0-30 points for the essay) 
+ {{< fa file-pen >}}  | Essay/Research proposal: 40\% (0-40 points for the essay) 
 :::
+
+{{< fa regular face-grin-stars >}} &nbsp; 100-90: Excellent &emsp;
+{{< fa regular face-smile >}} &nbsp; 89-80: Good &emsp;
+{{< fa regular face-meh >}} &nbsp; 79-65: Satisfactory &emsp;
+{{< fa regular face-rolling-eyes >}} &nbsp; 64-50: Sufficient
+
 
 **All single tasks have to be passed** (50\% threshold each).

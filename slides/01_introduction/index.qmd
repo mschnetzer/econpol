@@ -12,7 +12,7 @@ subtitle: Introduction
 date: October 14, 2022
 from: markdown+emoji
 bibliography: ../../data/lit/wipol_spec.bib
-csl: ../../data/lit/wirtschaftsuniversitat-wien-author-date.csl
+csl: ../../data/lit/wipol.csl
 execute:
   echo: true
 format:
@@ -65,6 +65,15 @@ format:
 :::
 :::
 
+## Who are you?
+
+![](img/group3.png){.absolute bottom="0%" left="0%" height="400px"}
+![](img/group2.png){.absolute bottom="0%" left="15%" height="400px"}
+![](img/group1.png){.absolute bottom="0%" left="33%" height="400px"}
+![](img/group4.png){.absolute bottom="0%" left="50%" height="400px"}
+
+[What do you already know about inequality and what do you expect of this course?]{.bubble .bubble-bottom-right .absolute top="15%" right="0%" style="max-width:400px;--bubcol: var(--bubcol-dred); font-size:1.8rem;"}
+
 ## Schedule
 
 ```{r packages}
@@ -98,7 +107,7 @@ schedule %>% arrange(Date) %>% select(-c(Paper,PDF,Slides)) %>%
 
 ## Assignments {.smaller}
 
-Please write a summary of the provided paper with a [**limit of 400 words**]{.marker-hl} and upload it on the [learning platform](https://learn.wu.ac.at). While assignments 1 [@piketty:2014] and 3 [@stockhammer:2013] are mandatory, students may choose between 2 [@milanovic:2015] and 4 [@atkinson:2014]. 
+While assignments 1 [@piketty:2014] and 3 [@stockhammer:2013] are mandatory, students may choose between 2 [@milanovic:2015] and 4 [@atkinson:2014]. Please write a summary of the provided paper with a [**limit of 400 words**]{.marker-hl} and upload it on the [learning platform](https://learn.wu.ac.at).
 
 The submission deadline is [**9 a.m. on the day of the respective teaching unit**]{.marker-hl}. You can structure your text around the following questions:
 
@@ -139,7 +148,7 @@ The submission deadline is [**9 a.m. on the day of the respective teaching unit*
 :::
 :::
 
-## Poster Session I {.smaller}
+## Poster Session I {.medium}
 ```{r readbib}
 #| include: false
 #| cache: false
@@ -221,24 +230,36 @@ printtab %>% arrange(rank) %>% select(rank, topic, papers, session) %>%
 ## Grading
 
 <br>
-<i class="fa-solid fa-home icon"></i> Assignments: 30\% [(0-10 points for each homework)]{.grey600 style="font-size:2rem;"}
+<i class="fa-solid fa-home icon"></i> Assignments: 30\% [(0-10 points for each homework)]{.grey600 style="font-size:1.8rem;"}
 <br>
 <br>
 
 . . .
 
-<i class="fa-solid fa-person-chalkboard icon"></i>  Poster presentation: 30\% [(0-20 points for the quality of the presentation, 0-10 for the poster style and structure)]{.grey600 style="font-size:2rem;"} 
+<i class="fa-solid fa-person-chalkboard icon"></i>  Poster presentation: 30\% [(0-20 points for the quality of the presentation, 0-10 for the poster style and structure)]{.grey600 style="font-size:1.8rem;"} 
 <br>
 <br>
 
 . . .
 
-<i class="fa-solid fa-file-pen icon"></i> Essay/Research proposal: 40\% [(0-30 points for the essay)]{.grey600 style="font-size:2rem;"}
+<i class="fa-solid fa-file-pen icon"></i> Essay/Research proposal: 40\% [(0-40 points for the essay)]{.grey600 style="font-size:1.8rem;"}
 
 
 ::: aside
+::: { style="font-size:1.5rem" }
+{{< fa regular face-grin-stars >}} &nbsp; 100-90: Excellent &emsp;
+{{< fa regular face-smile >}} &nbsp; 89-80: Good &emsp;
+{{< fa regular face-meh >}} &nbsp; 79-65: Satisfactory &emsp;
+{{< fa regular face-rolling-eyes >}} &nbsp; 64-50: Sufficient <br>
 [All single tasks have to be passed]{.marker-hl} (50% threshold each).
 :::
+:::
+
+## Feedback and Evaluation {.medium}
+
+Let me know your [feedback]{.marker-hl} on the course anytime. If possible, I will try to incorporate your feedback immediately. At least, I will consider it for future courses.
+
+Additionally, there will be an anonymous [online evaluation]{.marker-hl} at the end of semester. You are asked to fill in the evaluation in class in one of the two January sessions. Please take part in the online evaluation even if you cannot be present in these session.
 
 
 ## Bibliography {.bibstyle}

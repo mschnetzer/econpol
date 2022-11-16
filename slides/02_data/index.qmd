@@ -12,7 +12,8 @@ subtitle: Data sources and definitions
 date: October 21, 2022
 from: markdown+emoji
 bibliography: ../../data/lit/wipol_spec.bib
-csl: ../../data/lit/wirtschaftsuniversitat-wien-author-date.csl
+csl: ../../data/lit/wipol.csl
+prefer-html: true
 execute:
   echo: true
 format:
@@ -27,7 +28,7 @@ format:
     transition: fade
     progress: true
     multiplex: false
-    scrollable: true
+    scrollable: false
     preview-links: true
     hide-inactive-cursor: true
     highlight-style: printing
@@ -161,10 +162,11 @@ kable_classic(full_width = F)
 
 - European Union Statistics on Income and Living Conditions (by Eurostat)
 - Harmonized sample survey in private households
-- Replaced European Community Household Panel (1994-2001) in 2003
+- Replaced [European Community Household Panel]{.secfont} (1994-2001) in 2003
 - Conducted in all EU member states and Switzerland, Norway, Iceland, Turkey, Serbia and Macedonia
-- Austria: Stratified random sample from population register
-- AT: approx. 6,000 households annually; EU: approx. 135,000 households (weights!)
+- Sample:
+    - :austria: Stratified random sample from population register with approx. 6,000 households annually 
+    - :eu: approx. 135,000 households ([use weights!]{.circle-hl})
 - Interview mode: CAPI/CATI
 - Rotating 4 year panel; Ad-hoc modules
 - Standard documentation for Austria: [{{< fa file-pdf >}}](https://www.statistik.at/fileadmin/shared/QM/Standarddokumentationen/B/std_b_eu-silc-2020.pdf) 
@@ -172,8 +174,8 @@ kable_classic(full_width = F)
 ## Income data in EU-SILC {.smaller}
 
 ::: columns
-::: {.column width="49%" style="font-size:1.2rem"}
-[**Individual level:**]{.red style="font-size:1.5rem"}
+::: {.column style="font-size:1.4rem"}
+[**Individual level:**]{.red style="font-size:1.7rem"}
 
 - [employee cash or near cash income]{.hl .hl-blue}
 - cash benefits or losses from self-employment
@@ -185,8 +187,9 @@ kable_classic(full_width = F)
 - [disability benefits]{.hl .hl-blue}
 - [education-related allowances]{.hl .hl-blue}
 :::
-::: {.column width="49%" style="font-size:1.2rem"}
-[**Household level:**]{.red style="font-size:1.5rem"}
+
+::: {.column style="font-size:1.4rem"}
+[**Household level:**]{.red style="font-size:1.7rem"}
 
 - income from rental of a property or land
 - [family/children related allowances]{.hl .hl-blue}
@@ -277,7 +280,7 @@ Source: @ertl:2022
 ::: footer
 :::
 
-## Properties of inequality measures {.smaller}
+## Common properties of inequality measures {.smaller}
 
 :::columns
 ::: {.column width="35%"}
@@ -338,6 +341,43 @@ $$G= \frac{\sum_{i=1}^{n}\sum_{j=1}^{n}|y_i - y_j|}{2n^2\bar{y}}$$
 
 ::: footer
 :::
+
+## National Accounts
+
+```{r, engine = 'tikz'}
+#| echo: false
+\definecolor{nablue}{HTML}{5d8198}
+\definecolor{nadred}{HTML}{d03161}
+\definecolor{nagreen}{HTML}{218500}
+\usetikzlibrary{shapes.arrows}
+\tikzstyle{na} = [
+  circle,
+  font = {\footnotesize},
+  minimum size =2cm,
+  align=center,
+  draw=black,
+  thick]
+\begin{tikzpicture}
+  \node[na, color=nablue] (exacc) at (0,0) {Expenditure \\ Accounts};
+  \node[na, color=nadred] (incacc) at (3,0) {Income \\ Accounts};
+  \node[na, color=nagreen] (prodacc) at (1.5,2.5) {Production \\ Accounts};
+  \node[] at (1.5, 1) {GDP};
+  \draw[draw=nadred, very thin] (4, 1) rectangle ++(4,3);
+  \node[align=center] at (5.5, 2) {Wage share};
+  \node[align=center] at (6.5, 3) {Profit share};
+  \draw[very thick] (4.5, 2.3) -- (7.4, 2.7);
+  \node[single arrow, draw=black, very thick, fill=white,
+      minimum width = 10pt, single arrow head extend=3pt,
+      minimum height= 8mm, rotate=-90] at (5, 3) {};
+  \node[single arrow, draw=black, very thick, fill=white,
+      minimum width = 10pt, single arrow head extend=3pt,
+      minimum height= 8mm, rotate=90] at (7, 2) {};
+  \draw[very thick, -stealth, draw=nadred] (incacc.east) -| (6,1);
+  \draw[very thick] (incacc.north) to[out=90,in=0] (prodacc.east);
+  \draw[very thick] (prodacc.west) to[out=180,in=90] (exacc.north);
+  \draw[very thick] (exacc.south east) to[out=315,in=225] (incacc.south west);
+\end{tikzpicture}
+```
 
 
 ## Institutional sectors in the SNA {.smaller}

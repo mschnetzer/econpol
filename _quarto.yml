@@ -8,12 +8,11 @@ format:
       - layout/css/econpol.scss
 
 bibliography: data/lit/wipol_spec.bib
-csl: data/lit/wirtschaftsuniversitat-wien-author-date.csl
+csl: data/lit/wipol.csl
 
 website:
   title: "PI 2159 Special Topics in Economic Policy"
   site-url: "https://mschnetzer.github.io/econpol/"
-  description-meta: "The economics of inequality"
   
   navbar:
     pinned: true
