@@ -13,7 +13,6 @@ date: October 21, 2022
 from: markdown+emoji
 bibliography: ../../data/lit/wipol_spec.bib
 csl: ../../data/lit/wipol.csl
-prefer-html: true
 execute:
   echo: true
 format:

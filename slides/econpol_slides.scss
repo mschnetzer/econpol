@@ -292,8 +292,19 @@ h1.title {
     padding-bottom: 0.4rem !important;
   }
 
-.tbl-larger td, tr, th, tbody {
-    font-size: 1.5rem !important;
+.test-table th {
+    font-family: $secfont;
+    font-weight: 400;
+    font-size: 1.3rem !important;
+  }
+  
+.test-table td, tr, tbody {
+    font-family: $secfont;
+    font-weight: 100;
+    font-size: 1.3rem !important;
+    border-bottom: solid 2px $grey200 !important;
+    padding-top: 0.4rem !important;
+    padding-bottom: 0.4rem !important;
   }
 
 .tbl-smaller th, td, tr, tbody {

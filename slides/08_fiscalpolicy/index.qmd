@@ -171,7 +171,7 @@ Studies typically find that [inequality increases]{.marker-hl} in periods of fis
 - @woo:2016: 17 OECD countries from 1980 to 2010
 - @heimberger:2020: 17 OECD countries from 1978 to 2013
 
-Data on fiscal consolidation is provided by @devries:2011: "A New Action-based Dataset of Fiscal Consolidation". Narrative approach that focuses on [policy actions]{.marker-hl} (tax hikes and/or spending cuts) taken by governments with the intent of reducing the budget deficit.
+Data on fiscal consolidation is provided by @devries:2011: "A New Action-based Dataset of Fiscal Consolidation". Narrative approach that focuses on policy actions (tax hikes and/or spending cuts) taken by governments with the intent of reducing the budget deficit.
 
 Methodology: Impulse response functions (IRF) from local projections as proposed by @jorda:2005.
 
